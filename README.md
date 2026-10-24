@@ -36,8 +36,9 @@ Chrome / Edge / Vivaldi 等 Chromium 内核浏览器，版本 ≥ 116。
 
 ## 安装
 
-1. 点本页右上角 **Code → Download ZIP**，解压到一个**你不会随手删掉的目录**。
-   解压后目录里应该能直接看到 `manifest.json`。
+1. 从 [**最新 Release**](https://github.com/tianfangliu98-cpu/Labnana-Exporter/releases/latest) 下载
+   `Labnana-Exporter-v*.zip`（也可以点本页右上角 **Code → Download ZIP**），
+   解压到一个**你不会随手删掉的目录**。解压后目录里应该能直接看到 `manifest.json`。
 2. 打开扩展管理页：
    - Chrome：地址栏输入 `chrome://extensions`
    - Edge：`edge://extensions`
