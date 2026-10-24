@@ -1,0 +1,40 @@
+name: 功能建议
+description: 希望增加或改进的能力
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **先说边界**：这个项目只处理**你自己**的账号下的作品，
+        不做批量采集他人内容，也不打算往那个方向做。与这个前提冲突的建议不会采纳。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想解决什么问题
+      description: 先讲场景，再讲功能。说清楚现在卡在哪一步。
+      placeholder: |
+        我的作品有一千多件，想按年份分开导出，
+        但现在只能一次导全部，中途中断就得重来。
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你设想的做法（可选）
+      description: 如果你有具体想法，写在这里；没有也没关系
+      placeholder: |
+        面板上加一个日期范围筛选，只需要选起止月份。
+
+  - type: dropdown
+    id: value
+    attributes:
+      label: 这个需求对你有多重要
+      options:
+        - 有了会方便很多
+        - 属于锦上添花
+        - 影响我能不能用
+    validations:
+      required: true

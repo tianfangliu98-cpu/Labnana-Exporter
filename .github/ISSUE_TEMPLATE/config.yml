@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安装与使用问题
+    url: https://github.com/tianfangliu98-cpu/Labnana-Exporter#readme
+    about: 先看 README 的「安装」「使用」「常见问题」，多数字段问题那里有答案
+  - name: 下载最新版本
+    url: https://github.com/tianfangliu98-cpu/Labnana-Exporter/releases/latest
+    about: 如果还没装，或者想确认自己是不是最新版本
