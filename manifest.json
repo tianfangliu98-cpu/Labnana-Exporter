@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "version": "1.9.0",
+  "description": "__MSG_appDesc__",
+  "default_locale": "zh_CN",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "storage",
+    "downloads",
+    "offscreen",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://labnana.com/*",
+    "https://*.labnana.com/*",
+    "https://api.listenhub.ai/*",
+    "https://cdn.labnana.com/*",
+    "https://storage.googleapis.com/*",
+    "https://*.googleapis.com/*",
+    "https://*.listenhub.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Labnana 作品导出器"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://labnana.com/*"],
+      "js": ["inject.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://labnana.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

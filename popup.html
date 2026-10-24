@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #18181b;
+        --fg: #e4e4e7;
+        --muted: #a1a1aa;
+        --line: rgba(255, 255, 255, 0.1);
+      }
+      * { box-sizing: border-box; }
+      body {
+        width: 320px;
+        margin: 0;
+        padding: 14px;
+        background: var(--bg);
+        color: var(--fg);
+        font: 13px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Microsoft YaHei", sans-serif;
+      }
+      h1 { font-size: 14px; margin: 0 0 2px; }
+      .sub { color: var(--muted); font-size: 11px; margin-bottom: 12px; }
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 12px;
+        margin-bottom: 10px;
+      }
+      .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+      .row + .row { margin-top: 8px; }
+      .label { color: var(--muted); }
+      button {
+        width: 100%;
+        padding: 8px 10px;
+        border-radius: 8px;
+        border: 1px solid #6366f1;
+        background: linear-gradient(180deg, #6366f1, #4f46e5);
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      button:disabled { opacity: 0.5; cursor: default; }
+      .hint { color: var(--muted); font-size: 11px; margin-top: 10px; line-height: 1.6; }
+      input[type="checkbox"] { accent-color: #6366f1; }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Labnana 作品导出器</h1>
+    <div class="sub" id="sub">把提示词、参数、参考图和成图一起带走</div>
+
+    <div class="card">
+      <div class="row">
+        <span class="label" id="lbl-refs">同时保存参考图</span>
+        <input type="checkbox" id="refs" checked />
+      </div>
+      <div class="row">
+        <span class="label" id="lbl-saveas">每次询问保存位置</span>
+        <input type="checkbox" id="saveAs" />
+      </div>
+      <div class="row">
+        <span class="label" id="lbl-skip">跳过成图（只补参考图）</span>
+        <input type="checkbox" id="skipImages" />
+      </div>
+    </div>
+
+    <button id="open">打开我的作品页</button>
+
+    <div class="hint" id="hint">
+      面板会出现在页面右下角。作品列表直接来自站内接口，
+      不依赖页面结构，站点改版也不会失效。
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

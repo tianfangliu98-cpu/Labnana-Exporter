@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Labnana Exporter",
+    "description": "Extension name"
+  },
+  "appDesc": {
+    "message": "Export your Labnana works as archives, complete with prompts, generation parameters and reference images.",
+    "description": "Extension description"
+  }
+}

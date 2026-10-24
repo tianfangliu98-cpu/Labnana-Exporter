@@ -1,0 +1,25 @@
+# 浏览器/系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 导出产物：不要提交自己的作品
+*.zip
+Labnana-export-*
+Labnana-merged/
+_Labnana-merged/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 本地调试
+*.log
+node_modules/

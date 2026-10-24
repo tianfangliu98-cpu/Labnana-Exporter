@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Labnana 作品导出器",
+    "description": "扩展名称"
+  },
+  "appDesc": {
+    "message": "把 Labnana 上的作品连同提示词、生成参数与参考图一起导出为压缩包。",
+    "description": "扩展简介"
+  }
+}
